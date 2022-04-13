@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<header>
+    <meta charset="UTF-8">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="estilo.css">
+</header>
+
+<body>
+    <!-- criar jogo da velha -->
+    <h1 id="page-title">JOGO DA VELHA - TIC TAC TOE</h1>
+    <!-- tag div vai representar uma linha/quadrado do jogo -->
+    <div id="linha1">
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div id="linha2">
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div id="linha3">
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div class="jogador">
+        <label>
+            PLAYER:
+        </label>
+        <label id="jogador-selecionado">
+
+        </label>
+    </div>
+    <div class="vencedor">
+        <label>
+            WINNER:
+        </label>
+        <label id="vencedor-selecionado">
+
+        </label>
+    </div>
+
+    <div>
+        <button onclick="reiniciar()">
+            Restart
+        </button>
+    </div>
+    <div>
+        <button aria-label="selecionar-modo" id="mode-selector">
+            Dark Mode
+        </button>
+    </div>
+
+
+    <footer> Desenvolvido por
+        <a href="https://www.linkedin.com/in/daviroquedev/">Davi Roque</a>
+    </footer>
+
+    <script src="velha.js"></script>
+</body>
+
+
+</html>
